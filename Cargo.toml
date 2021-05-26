@@ -1,0 +1,23 @@
+[package]
+name = "meta-rust-test"
+version = "0.1.0"
+authors = ["Alessandro Tagliapietra <tagliapietra.alessandro@gmail.com>"]
+edition = "2018"
+repository = "git@github.com:alex88/meta-rust-test.git"
+
+[dependencies]
+paho-mqtt = "0.9"
+futures = "0.3"
+async-std = "1.9.0"
+confy = "0.4.0"
+serde = { version = "1.0.126", features = ["derive"] }
+clap = "3.0.0-beta.2"
+actix = "0.11"
+log = "0.4"
+fern = { version = "0.5", features = ["colored"] }
+chrono = "0.4"
+rocket = { git = "https://github.com/SergioBenitez/Rocket", rev = "f85604b65ef3d1335adfeb98a0a83be34c27388d" }
+rocket_contrib = { git = "https://github.com/SergioBenitez/Rocket", rev = "f85604b65ef3d1335adfeb98a0a83be34c27388d", features = ["tera_templates"] }
+pnet = { version = "0.28.0", features = ["serde"] }
+lazy_static = "1.4.0"
+tera = "1"
