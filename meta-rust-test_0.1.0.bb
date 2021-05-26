@@ -7,11 +7,11 @@ inherit cargo
 
 # how to get meta-rust-test could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/meta-rust-test/0.1.0"
-SRC_URI += ""
-SRCREV = ""
+SRC_URI += "git://git@github.com/alex88/meta-rust-test.git;protocol=ssh;nobranch=1"
+SRCREV = "fe8a5f15c8b4479f422524ae96184181badf88d8"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-
+PV_append = ".AUTOINC+fe8a5f15c8"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -291,19 +291,19 @@ SRC_URI += " \
 "
 
 SRCREV_FORMAT .= "_async-stream"
-SRCREV_async-stream = "c46ada948e0d4800393836f57eb2a3db516beb1e"
+SRCREV_async-stream = "c46ada9"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/async-stream"
 SRCREV_FORMAT .= "_async-stream-impl"
-SRCREV_async-stream-impl = "c46ada948e0d4800393836f57eb2a3db516beb1e"
+SRCREV_async-stream-impl = "c46ada9"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/async-stream-impl"
 SRCREV_FORMAT .= "_devise"
-SRCREV_devise = "df00b5162edd53e8d496e7935774e69b5f7f6bdf"
+SRCREV_devise = "df00b5"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/devise"
 SRCREV_FORMAT .= "_devise_codegen"
-SRCREV_devise_codegen = "df00b5162edd53e8d496e7935774e69b5f7f6bdf"
+SRCREV_devise_codegen = "df00b5"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/devise_codegen"
 SRCREV_FORMAT .= "_devise_core"
-SRCREV_devise_core = "df00b5162edd53e8d496e7935774e69b5f7f6bdf"
+SRCREV_devise_core = "df00b5"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/devise_core"
 SRCREV_FORMAT .= "_rocket"
 SRCREV_rocket = "f85604b65ef3d1335adfeb98a0a83be34c27388d"
@@ -318,7 +318,7 @@ SRCREV_FORMAT .= "_rocket_http"
 SRCREV_rocket_http = "f85604b65ef3d1335adfeb98a0a83be34c27388d"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/rocket_http"
 SRCREV_FORMAT .= "_state"
-SRCREV_state = "8f94dce673b7d4b0e7b96c808a84f5e2a4be4a60"
+SRCREV_state = "8f94dc"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/state"
 
 # FIXME: update generateme with the real MD5 of the license file
